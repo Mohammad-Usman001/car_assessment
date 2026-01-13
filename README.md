@@ -67,25 +67,25 @@ Admin can manage all homepage content dynamically:
 
 ### Frontend
 - Homepage  
-  ![Homepage]![Screenshot_13-1-2026_16722_127 0 0 1](https://github.com/user-attachments/assets/b7cd16e8-dac1-4f01-8518-e7653494f4e8)
+  [Screenshot_13-1-2026_16722_127 0 0 1](https://github.com/user-attachments/assets/b7cd16e8-dac1-4f01-8518-e7653494f4e8)
 
 - Car Inquiry Form  
-  ![Car Inquiry]![Screenshot_13-1-2026_16818_127 0 0 1](https://github.com/user-attachments/assets/9430dda5-6dab-4038-bc4e-458ca611667d)
+  [Screenshot_13-1-2026_16818_127 0 0 1](https://github.com/user-attachments/assets/9430dda5-6dab-4038-bc4e-458ca611667d)
 
 ### Admin Panel
 - Admin Dashboard  
-  ![Dashboard]![Screenshot_13-1-2026_1696_127 0 0 1](https://github.com/user-attachments/assets/e39b33fa-5f52-4631-9cbd-22c33b2fac4d)
+  [Screenshot_13-1-2026_1696_127 0 0 1](https://github.com/user-attachments/assets/e39b33fa-5f52-4631-9cbd-22c33b2fac4d)
 
 - Site Settings  
-  ![Site Settings]![Screenshot_13-1-2026_16948_127 0 0 1](https://github.com/user-attachments/assets/f1c3effa-8086-489d-87a0-9fb31afafbd0)
+  [Screenshot_13-1-2026_16948_127 0 0 1](https://github.com/user-attachments/assets/f1c3effa-8086-489d-87a0-9fb31afafbd0)
 
 - Banner CRUD  
-  ![Banner CRUD]![Screenshot_13-1-2026_161037_127 0 0 1](https://github.com/user-attachments/assets/2ef58245-1c37-4da3-ba09-21156f1d5724)
- ![Screenshot_13-1-2026_161135_127 0 0 1](https://github.com/user-attachments/assets/2dca8dd6-d1e6-4884-aff5-a5f800a37a5f)
+  [Banner Index ][Screenshot_13-1-2026_161037_127 0 0 1](https://github.com/user-attachments/assets/2ef58245-1c37-4da3-ba09-21156f1d5724)
+ [Banner edit Form][Screenshot_13-1-2026_161135_127 0 0 1](https://github.com/user-attachments/assets/2dca8dd6-d1e6-4884-aff5-a5f800a37a5f)
 
 - Cars CRUD  
-  ![Cars CRUD]![Screenshot_13-1-2026_161211_127 0 0 1](https://github.com/user-attachments/assets/c7e9e2c9-2634-46cb-b633-e2a24bb50819)
-![Screenshot_13-1-2026_161252_127 0 0 1](https://github.com/user-attachments/assets/b1e037fa-c6a1-41d5-a897-54c27d066a3b)
+  [Cars Index][Screenshot_13-1-2026_161211_127 0 0 1](https://github.com/user-attachments/assets/c7e9e2c9-2634-46cb-b633-e2a24bb50819)
+[Cars Edit Form][Screenshot_13-1-2026_161252_127 0 0 1](https://github.com/user-attachments/assets/b1e037fa-c6a1-41d5-a897-54c27d066a3b)
 
 
 ##  Project Setup (Local Installation)
