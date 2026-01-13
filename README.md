@@ -1,59 +1,97 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Car Assessment (Laravel)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A Laravel-based assessment project inspired by **CarsDekho.com**.  
+This project includes a customer **Car Inquiry Form** (Task 1) and a fully dynamic **CarsDekho-style Homepage with Admin Panel** (Task 2).
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+##  Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+###  Task 1 — Car Inquiry Form
+- Customer can submit inquiry with details:
+  - Name
+  - Phone (numeric validation)
+  - Email
+  - Address
+  - Car Options (Hatchback / Sedan / SUV)
+- Multiple car options selectable
+- Inquiry stored in database
+- SweetAlert success popup after submission
+- Professional UI with responsive design
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+###  Task 2 — CarsDekho Clone Homepage + Admin Panel
+Admin can manage all homepage content dynamically:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+#### Admin Panel Modules
+-  **Site Settings**
+  - Logo upload
+  - Header phone / email
+  - Footer about / address / phone / email
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-  **Banner Management (CRUD)**
+  - Add / Update / Delete banners
+  - Banner image upload with preview
+  - Banner status (Active/Inactive)
+  - SweetAlert delete confirmation
 
-## Laravel Sponsors
+-  **Cars Management (CRUD)**
+  - Add / Update / Delete car items
+  - Car Image upload
+  - Car Types:
+    - Most Searched Cars
+    - Latest Cars
+  - Status toggle (Active/Inactive)
+  - SweetAlert delete confirmation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+#### Frontend Homepage Sections
+-  Header (dynamic logo + contact info)
+-  Banner Slider section (dynamic banners)
+-  Most Searched Cars section (dynamic cars)
+-  Latest Cars section (dynamic cars)
+-  Footer (dynamic + creative design)
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+##  Tech Stack
+- **Laravel**
+- **PHP**
+- **MySQL**
+- **Bootstrap 5**
+- **SweetAlert2**
+- HTML / CSS / JS
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+##  Project Setup (Local Installation)
 
-## Code of Conduct
+###  Clone Repository
+```bash
+git clone https://github.com/Mohammad-Usman001/car_assessment.git
+cd car_assessment
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+##  Screenshots
 
-## Security Vulnerabilities
+### Frontend
+- Homepage  
+  ![Homepage]![Screenshot_13-1-2026_16722_127 0 0 1](https://github.com/user-attachments/assets/b7cd16e8-dac1-4f01-8518-e7653494f4e8)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Car Inquiry Form  
+  ![Car Inquiry]![Screenshot_13-1-2026_16818_127 0 0 1](https://github.com/user-attachments/assets/9430dda5-6dab-4038-bc4e-458ca611667d)
 
-## License
+### Admin Panel
+- Admin Dashboard  
+  ![Dashboard]![Screenshot_13-1-2026_1696_127 0 0 1](https://github.com/user-attachments/assets/e39b33fa-5f52-4631-9cbd-22c33b2fac4d)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Site Settings  
+  ![Site Settings]![Screenshot_13-1-2026_16948_127 0 0 1](https://github.com/user-attachments/assets/f1c3effa-8086-489d-87a0-9fb31afafbd0)
+
+- Banner CRUD  
+  ![Banner CRUD]![Screenshot_13-1-2026_161037_127 0 0 1](https://github.com/user-attachments/assets/2ef58245-1c37-4da3-ba09-21156f1d5724)
+ ![Screenshot_13-1-2026_161135_127 0 0 1](https://github.com/user-attachments/assets/2dca8dd6-d1e6-4884-aff5-a5f800a37a5f)
+
+- Cars CRUD  
+  ![Cars CRUD]![Screenshot_13-1-2026_161211_127 0 0 1](https://github.com/user-attachments/assets/c7e9e2c9-2634-46cb-b633-e2a24bb50819)
+![Screenshot_13-1-2026_161252_127 0 0 1](https://github.com/user-attachments/assets/b1e037fa-c6a1-41d5-a897-54c27d066a3b)
+
