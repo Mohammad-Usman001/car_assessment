@@ -1,0 +1,664 @@
+:root{
+    --primary:#e0191d;   /* CarsDekho red-ish */
+    --dark:#0f172a;
+    --muted:#64748b;
+    --bg:#f6f7fb;
+    --card:#ffffff;
+    --border:#e8edf5;
+}
+
+*{
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body{
+    background: var(--bg);
+}
+
+/* ===== HEADER ===== */
+.navbar{
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--border);
+}
+.brand-logo{
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(224,25,29,.10);
+    color: var(--primary);
+    font-weight: 900;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.brand-img{
+    height: 36px;
+    object-fit: contain;
+}
+.nav-link{
+    font-weight: 600;
+    color: var(--dark);
+}
+.nav-link:hover{
+    color: var(--primary);
+}
+.nav-pill{
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: var(--muted);
+    background: #fff;
+}
+
+/* ===== HERO / SLIDER ===== */
+.content-container { padding: 60px 0px; }
+
+
+.hero-slider .carousel-item{
+    height: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hero-slider img{
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(15,23,42,.75) 0%, rgba(15,23,42,.20) 60%, rgba(0,0,0,0) 100%);
+}
+.hero-content{
+    position:absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 520px;
+}
+.hero-content h1{
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.hero-content p{
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 18px;
+}
+
+.hero-slider .carousel-control-next-icon, .hero-slider .carousel-control-prev-icon {
+    position: absolute;
+    opacity: 1;
+    width: 36px;
+    height: 36px;
+    background-color: #f00;
+    border-radius: 50%;
+    padding: 10px;
+    background-size: 20px;
+}.hero-slider .carousel-control-next-icon { right: 14px;}
+.hero-slider .carousel-control-prev-icon { left: 14px; }
+.btn-primary{
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    border-radius: 14px;
+    font-weight: 700;
+    padding: 10px 14px;
+}
+.btn-outline-light{
+    border-radius: 14px;
+    font-weight: 700;
+    padding: 10px 14px;
+}
+
+/* ===== SECTION ===== */
+.section-title{
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--dark);
+}
+.section-subtitle{
+    color: var(--muted);
+}
+
+/* ===== CAR CARD ===== */
+.car-card {
+    border: 1px solid rgb(220 220 220 / 90%);
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--card);
+    box-shadow: 0 10px 25px rgb(169 169 169 / 6%);
+    transition: .2s ease-in-out;
+}
+.car-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(18,38,63,.10);
+}
+.car-img{
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+}
+.car-body{
+    padding: 14px 14px 16px;
+}
+.car-name{
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.car-meta{
+    font-size: 13px;
+    color: var(--muted);
+}
+.price-tag{
+    font-weight: 900;
+    color: var(--dark);
+}
+.badge-soft{
+    background: rgba(224,25,29,.1);
+    color: var(--primary);
+    font-weight: 800;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* ===== FOOTER (Creative + Logo Only) ===== */
+.footer{
+    background: linear-gradient(180deg, #0b1220 0%, #070b14 100%);
+    color: rgba(255,255,255,0.85);
+    margin-top: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative red glow */
+.footer::before{
+    content:'';
+    position:absolute;
+    top:-140px;
+    right:-160px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background: radial-gradient(circle, rgba(224,25,29,.35) 0%, rgba(224,25,29,0) 70%);
+    filter: blur(0px);
+    opacity: .9;
+}
+.footer::after{
+    content:'';
+    position:absolute;
+    bottom:-220px;
+    left:-180px;
+    width:520px;
+    height:520px;
+    border-radius:50%;
+    background: radial-gradient(circle, rgba(255,255,255,.08) 0%, rgba(255,255,255,0) 70%);
+    opacity:.55;
+}
+
+.footer .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* Brand logo box */
+.footer-brand{
+   max-width: 160px;
+}
+
+/* small red stripe top */
+
+
+.footer-logo-img{
+   filter: brightness(0) invert(1);
+}
+
+.footer-logo-fallback{
+    width: 52px;
+    height: 42px;
+    border-radius: 14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight: 1000;
+    background: rgba(224,25,29,.16);
+    color:#fff;
+    border: 1px solid rgba(224,25,29,.20);
+}
+
+/* Description */
+.footer-desc{
+    color: rgba(255,255,255,0.78);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+/* Headings */
+.footer-heading{
+    font-weight: 900;
+    color:#fff;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+/* Links */
+.footer-links{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a{
+    color: rgba(255,255,255,0.78);
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .2s;
+}
+.footer-links a:hover{
+    color:#fff;
+    transform: translateX(2px);
+}
+
+/* Social buttons */
+.social-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #fff;
+    text-decoration:none;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    transition: .2s ease-in-out;
+}
+.social-btn:hover{
+    background: rgba(224,25,29,.20);
+    border-color: rgba(224,25,29,.25);
+    transform: translateY(-2px);
+}
+
+/* Contact items */
+.footer-contact{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-item{
+    display:flex;
+    gap: 10px;
+    align-items:flex-start;
+    color: rgba(255,255,255,0.78);
+    font-size: 14px;
+}
+.contact-item i{
+    color: rgba(255,255,255,0.95);
+    margin-top: 2px;
+}
+
+/* Newsletter */
+.newsletter-title{
+    font-weight: 800;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 10px;
+}
+.newsletter-form{
+    display:flex;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+}
+.newsletter-form input{
+    width:100%;
+    background: transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size: 14px;
+}
+.newsletter-form input::placeholder{
+    color: rgba(255,255,255,0.55);
+}
+.newsletter-form button{
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    border:none;
+    background: rgba(224,25,29,.95);
+    color:#fff;
+    font-weight: 900;
+    transition: .2s;
+}
+.newsletter-form button:hover{
+    background: #c9161a;
+}
+
+/* Admin chip */
+.admin-chip{
+    display:inline-flex;
+    align-items:center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(224,25,29,.15);
+    border: 1px solid rgba(224,25,29,.20);
+    color:#fff;
+    font-weight: 800;
+    text-decoration:none;
+    font-size: 13px;
+}
+.admin-chip:hover{
+    opacity:.9;
+    color:#fff;
+}
+
+/* Bottom */
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,0.10);
+    padding-top: 16px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+}
+.footer-small{
+    color: rgba(255,255,255,0.78);
+    font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 576px){
+    .footer{
+        margin-top: 35px;
+    }
+    .footer-desc{
+        font-size: 13px;
+    }
+    .social-btn{
+        border-radius: 12px;
+    }
+    .footer-brand{
+        padding: 10px 12px;
+        border-radius: 16px;
+    }
+}
+
+/* Responsive slider */
+@media (max-width: 992px){
+    .hero-slider .carousel-item,
+    .hero-slider img{
+        height: 320px;
+    }
+    .hero-content{
+        left: 20px;
+        right: 20px;
+        max-width: 100%;
+    }
+    .hero-content h1{
+        font-size: 26px;
+    }
+}
+/* ==============================
+   Home Page Mobile Improvements
+   ============================== */
+
+/* Make container edge-to-edge feel on mobile */
+@media (max-width: 576px){
+    .container{
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+}
+
+/* Slider improvements */
+.home-slider .carousel-item,
+.home-slider img{
+    height: 420px;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+    .home-slider .carousel-item,
+    .home-slider img{
+        height: 320px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+    .home-slider .carousel-item,
+    .home-slider img{
+        height: 260px;
+        border-radius: 16px;
+    }
+
+    .hero-overlay{
+        background: linear-gradient(90deg,
+            rgba(15,23,42,.88) 0%,
+            rgba(15,23,42,.55) 65%,
+            rgba(15,23,42,.10) 100%);
+    }
+
+    .hero-content{
+        left: 16px;
+        right: 16px;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .hero-content h1{
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 6px;
+    }
+
+    .hero-content p{
+        font-size: 13px;
+        margin-bottom: 12px;
+        line-height: 1.35;
+    }
+
+    .hero-content .btn{
+        padding: 9px 12px;
+        font-size: 13px;
+        border-radius: 12px;
+    }
+}
+
+/* Sections spacing */
+@media (max-width: 576px){
+    section.mt-5{
+        margin-top: 32px !important;
+    }
+}
+
+/* Title + View All responsive */
+@media (max-width: 576px){
+    .section-title{
+        font-size: 18px;
+    }
+    .section-subtitle{
+        font-size: 13px;
+    }
+}
+
+/* Car Cards improvements */
+@media (max-width: 576px){
+    .car-card{
+        border-radius: 16px;
+    }
+
+    .car-img{
+        height: 130px;
+    }
+
+    .car-body{
+        padding: 12px;
+    }
+
+    .car-name{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .car-meta{
+        font-size: 12px;
+    }
+
+    .price-tag{
+        font-size: 13px;
+    }
+
+    .badge-soft{
+        font-size: 11px;
+        padding: 5px 9px;
+    }
+
+    .car-card .btn{
+        font-size: 13px;
+        padding: 9px 10px;
+        border-radius: 12px;
+    }
+}
+
+/* Fix "View All" alignment on mobile */
+@media (max-width: 576px){
+    section .d-flex.align-items-end.justify-content-between{
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 6px;
+    }
+}
+/* ======================================
+   Home Page Enhancement (Professional)
+   ====================================== */
+
+/* Section Wrapper */
+.home-section{
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 10px 25px rgba(18,38,63,.05);
+}
+
+/* Section heading */
+.section-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+.section-head .title{
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--dark);
+}
+.section-head .subtitle{
+    color: var(--muted);
+    font-size: 14px;
+}
+.section-head .view-all{
+    text-decoration:none;
+    font-weight:800;
+    color: var(--primary);
+    white-space: nowrap;
+}
+.section-head .view-all:hover{
+    opacity:.85;
+}
+
+/* Car card improvement */
+.car-card{
+    border: 1px solid rgba(231,236,246,.9);
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--card);
+    box-shadow: 0 10px 25px rgba(18,38,63,.06);
+    transition: .2s ease-in-out;
+}
+.car-img{
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+}
+.car-body{
+    padding: 14px 14px 16px;
+}
+
+/* Price pill */
+.price-pill{
+    display:inline-flex;
+    align-items:center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight:900;
+    font-size: 13px;
+    background: rgba(15,23,42,0.06);
+    color: var(--dark);
+}
+
+/* CTA button nicer */
+.car-card .btn{
+    border-radius: 14px;
+    font-weight: 900;
+}
+
+/* Mobile layout upgrades */
+@media (max-width: 576px){
+    .home-section{
+        padding: 14px;
+        border-radius: 18px;
+    }
+
+    .section-head{
+        flex-direction: column;
+        align-items:flex-start;
+        margin-bottom: 10px;
+    }
+
+    .section-head .title{
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .section-head .subtitle{
+        font-size: 13px;
+    }
+
+    .car-img{
+        height: 200px; /* full width card so bigger image looks premium */
+    }
+
+    .car-body{
+        padding: 14px;
+    }
+
+    .car-name{
+        font-size: 16px;
+    }
+
+    .car-meta{
+        font-size: 13px;
+    }
+
+    .price-pill{
+        font-size: 13px;
+    }
+
+    .car-card .btn{
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+}
