@@ -63,14 +63,6 @@ Admin can manage all homepage content dynamically:
 - HTML / CSS / JS
 
 ---
-
-##  Project Setup (Local Installation)
-
-###  Clone Repository
-```bash
-git clone https://github.com/Mohammad-Usman001/car_assessment.git
-cd car_assessment
-
 ##  Screenshots
 
 ### Frontend
@@ -94,4 +86,12 @@ cd car_assessment
 - Cars CRUD  
   ![Cars CRUD]![Screenshot_13-1-2026_161211_127 0 0 1](https://github.com/user-attachments/assets/c7e9e2c9-2634-46cb-b633-e2a24bb50819)
 ![Screenshot_13-1-2026_161252_127 0 0 1](https://github.com/user-attachments/assets/b1e037fa-c6a1-41d5-a897-54c27d066a3b)
+
+
+##  Project Setup (Local Installation)
+
+###  Clone Repository
+```bash
+git clone https://github.com/Mohammad-Usman001/car_assessment.git
+cd car_assessment
 
